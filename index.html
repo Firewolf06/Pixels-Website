@@ -5,25 +5,32 @@
 		<title>Pixels | buddi07</title>
 	</head>
 
-	<script>
-	    // 1. wait for the page to be fully loaded.
-	    window.onload = function() {
-		drawExamples();
-	    }
+	<body>
+		<canvas id="ex1" width="500" height="150"
+           			style="border: 1px solid #cccccc;">
+   	 		HTML5 Canvas not supported
+		</canvas>
+		
+		<script>
+		    // 1. wait for the page to be fully loaded.
+		    window.onload = function() {
+			drawExamples();
+		    }
 
 
-	    function drawExamples(){
+		    function drawExamples(){
 
-		// 2. Obtain a reference to the canvas element.
-		var canvas  = document.getElementById("ex1");
+			// 2. Obtain a reference to the canvas element.
+			var canvas  = document.getElementById("ex1");
 
-		// 3. Obtain a 2D context from the canvas element.
-		var context = canvas.getContext("2d");
+			// 3. Obtain a 2D context from the canvas element.
+			var context = canvas.getContext("2d");
 
-		// 4. Draw graphics.
-		context.fillStyle = "#ff0000";
-		context.fillRect(10,10, 100,100);
-	    }
-	</script>
+			// 4. Draw graphics.
+			context.fillStyle = "#ff0000";
+			context.fillRect(10,10, 100,100);
+		    }
+		</script>
+	</body>
 
 </html>
