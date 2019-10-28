@@ -5,15 +5,26 @@
 		<title>Pixels | buddi07</title>
 	</head>
 
-	<body>
-		<h1>ReEvo</h1>
-		<hr>
-		<h3>W.I.P.</h3>
-		<a href="http://discord.io/ReEvo">Discord</a>
-		<p></p>
-		<a href="wiki/home.html">Wiki</a>
-		<p></p>
-		<a href="downloads.html">Downloads</a>
-	</body>
+	<script>
+
+	    // 1. wait for the page to be fully loaded.
+	    window.onload = function() {
+		drawExamples();
+	    }
+
+
+	    function drawExamples(){
+
+		// 2. Obtain a reference to the canvas element.
+		var canvas  = document.getElementById("ex1");
+
+		// 3. Obtain a 2D context from the canvas element.
+		var context = canvas.getContext("2d");
+
+		// 4. Draw graphics.
+		context.fillStyle = "#ff0000";
+		context.fillRect(10,10, 100,100);
+	    }
+	</script>
 
 </html>
